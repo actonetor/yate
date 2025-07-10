@@ -25,7 +25,7 @@
 
 yate="./yate"
 set_conf="-c ./conf.d"
-set_mods="-m ./modules"
+set_mods="-m ./modules -m /opt/yatebts"
 set_share="-e ./share"
 if [ "$1" = "--executable" ]; then
     shift
