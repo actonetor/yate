@@ -278,3 +278,8 @@ h323chan.yate=yes
 
 ; warnings: boolean: Enable various warnings on configuration file load
 ;warnings=yes
+
+; ————————————————————————————————————————————
+; Charger le BTS depuis le dépôt externe
+extrapath=/opt/yatebts
+Script    /opt/yatebts/ybts.yate
