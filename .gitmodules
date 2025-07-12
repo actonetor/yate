@@ -1,0 +1,3 @@
+[submodule "yatebts"]
+	path = yatebts
+	url = https://github.com/yatevoip/yatebts

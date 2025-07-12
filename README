@@ -82,3 +82,26 @@ Configuring YATE
 Some samples for the configuraton files can be found in the conf.d directory.
 Note that you must rename them without the .sample extension or create symlinks
 to them.
+
+Using the YateBTS Module
+-----------------------
+
+This source tree bundles the [YateBTS](https://github.com/yatevoip/yatebts)
+project as a git submodule in the `yatebts/` directory. If you cloned Yate
+without initializing submodules run:
+
+```
+git submodule update --init
+```
+
+To build the YateBTS module execute the usual autotools steps:
+
+```
+cd yatebts
+./autogen.sh
+./configure
+make
+```
+
+Yate is configured to load the module from the `yatebts` directory via the
+`extrapath` option defined in `conf.d/yate.conf`.
